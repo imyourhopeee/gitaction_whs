@@ -3,10 +3,10 @@ name: Terraform CI/CD & OIDC Test
 on:
   push:
     branches:
-      - main
+      - hope-branch
   pull_request:
     branches:
-      - main
+      - hope-branch
 
 permissions:
   id-token: write
