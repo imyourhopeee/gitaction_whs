@@ -66,7 +66,7 @@
 #         run: terraform plan -out=tfplan
 
 #       - name: "Terraform Apply"
-#         if: github.ref == 'refs/heads/main'
+# if: github.ref == 'refs/heads/main'
 #         run: terraform apply -auto-approve tfplan
 name: OIDC Test
 on:
@@ -87,4 +87,4 @@ jobs:
           role-to-assume: arn:aws:iam::481665099346:role/cloudfence
 
       - name: List files in S3 bucket
-        run: aws s3 ls outsider-oidc-demo-bucket
+        run: aws s3 ls whs-oidc-demo-bucket
